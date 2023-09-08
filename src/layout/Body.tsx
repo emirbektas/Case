@@ -1,5 +1,6 @@
 import Slideshow from "../components/Slideshow";
 import Movies from "../components/Movies";
+// import Categories from "../components/Categories";
 
 function Body() {
   return (
@@ -7,7 +8,7 @@ function Body() {
       <div className="">
         <Slideshow />
       </div>
-      <div>Kategoriler</div>
+      <div>{/* <Categories /> */}</div>
       <div>
         <Movies />
       </div>

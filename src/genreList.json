@@ -1,0 +1,38 @@
+[
+  {
+    "value": "",
+    "label": "All"
+  },
+  {
+    "value": "28",
+    "label": "Action"
+  },
+  {
+    "value": "35",
+    "label": "Comedy"
+  },
+  {
+    "value": "27",
+    "label": "Horror"
+  },
+  {
+    "value": "878",
+    "label": "Sci-Fi"
+  },
+  {
+    "value": "18",
+    "label": "Drama"
+  },
+  {
+    "value": "9648",
+    "label": "Mystery"
+  },
+  {
+    "value": "10749",
+    "label": "Romance"
+  },
+  {
+    "value": "10402",
+    "label": "Musical"
+  }
+]

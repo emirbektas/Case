@@ -2,7 +2,7 @@ import { SlMenu } from "react-icons/sl";
 
 function Header() {
   return (
-    <div className="mb-20 bg-purple-800">
+    <div className="bg-gray-600 text-white">
       <div className="flex justify-between p-5">
         <div>
           <ul className="flex ">

@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import Card from "./Card";
+import { Link } from "react-router-dom";
 
 const Movies = () => {
   const [movies, setMovies] = useState([]);
@@ -48,13 +50,13 @@ const Movies = () => {
   return (
     <>
       <div>
-        <div className="my-20 flex wrapper overflow-x-auto">
+        <div className="my-10 flex wrapper overflow-x-auto">
           {genres.map((genre) => (
             <button
               key={genre.value}
               value={genre.value}
               onMouseUp={() => filterMoviesByGenre(genre.value)}
-              className="category bg-red-500 p-4 m-2"
+              className="category text-white bg-gray-800 rounded-xl px-4 mx-2"
             >
               {genre.label}
             </button>
@@ -63,16 +65,9 @@ const Movies = () => {
       </div>
       <div className="grid grid-cols-3 gap-3 p-3">
         {filteredMovies.map((movie) => (
-          <div key={movie.id} className="border border-red-400">
-            <div className="">
-              <img
-                src={`https://www.themoviedb.org/t/p/w500/${movie.poster_path}`}
-                alt="Movie Image"
-                className="rounded-md h-[175px]"
-              />
-              <div className="text-center">{movie.title}</div>
-            </div>
-          </div>
+          <Link to={`/details/${movie.id}`} key={movie.id}>
+            <Card movie={movie} />
+          </Link>
         ))}
       </div>
     </>

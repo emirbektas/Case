@@ -4,7 +4,7 @@ import Header from "../layout/Header";
 
 function Home() {
   return (
-    <div>
+    <div className="bg-black">
       <Header />
       <Body />
       <Footer />

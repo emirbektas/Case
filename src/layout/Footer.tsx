@@ -12,8 +12,8 @@ import qr from "../assets/qr.png";
 
 function Footer() {
   return (
-    <div className="p-10">
-      <div className="flex flex-col">
+    <div className="bg-white p-10 sm:text-center lg:px-20 xl:px-24 2xl:px-32">
+      <div className="flex flex-col lg:grid grid-cols-3 lg:text-left">
         <div className="mb-4">
           <h1 className="text-xl font-semibold mb-2">Yardim</h1>
           <a href="">Frequently Asked Questions</a>
@@ -53,23 +53,25 @@ function Footer() {
         </div>
       </div>
       <hr />
-      <div>
-        <div className="flex flex-col text-center justify-center gap-1">
-          <p>Digiturk bir beIN MEDIA GROUP kuruluşudur.</p>
-          <p>2023 Her Hakki saklidir</p>
+      <div className="mt-4">
+        <div className="flex flex-col text-center justify-center gap-1 lg:flex-row lg:justify-between">
+          <div className="my-auto">
+            <p>Digiturk bir beIN MEDIA GROUP kuruluşudur.</p>
+            <p>2023 Her Hakki saklidir</p>
+          </div>
+          <div>
+            <ul className="flex gap-10 my-4 justify-center">
+              <li className="my-auto">
+                <img src={appStore} alt="" className="lg:h-16" />
+              </li>
+              <li className="my-auto">
+                <img src={googlePlay} alt="" className="lg:h-16 " />
+              </li>
+            </ul>
+          </div>
         </div>
         <div>
-          <ul className="flex gap-2 my-2">
-            <li>
-              <img src={appStore} alt="" />
-            </li>
-            <li>
-              <img src={googlePlay} alt="" />
-            </li>
-          </ul>
-          <div>
-            <img src={qr} alt="QR" className="mx-auto w-32" />
-          </div>
+          <img src={qr} alt="QR" className="mx-auto w-32" />
         </div>
       </div>
     </div>

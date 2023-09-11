@@ -6,6 +6,7 @@ interface Movie {
   id: number;
   title: string;
   genre_ids: number[];
+  poster_path: string;
 }
 
 const Movies: React.FC = () => {
@@ -67,7 +68,9 @@ const Movies: React.FC = () => {
               key={genre.value}
               value={genre.value}
               onMouseUp={() => filterMoviesByGenre(genre.value)}
-              className="focus:bg-purple-950 category text-white bg-gray-800 rounded-xl px-6 mx-2 lg:px-8 xl:px-8 2xl:px-8 2xl:py-4"
+              className={` category text-white bg-gray-800 rounded-xl px-6 mx-2 lg:px-8 xl:px-8 2xl:px-8 2xl:py-4 ${
+                genre.value === selectedGenre ? "bg-purple-950" : ""
+              }`}
             >
               {genre.label}
             </button>

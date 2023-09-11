@@ -56,7 +56,7 @@ function Footer() {
       <div className="mt-4">
         <div className="flex flex-col text-center justify-center gap-1 lg:flex-row lg:justify-between">
           <div className="my-auto">
-            <p>Digiturk bir beIN MEDIA GROUP kuruluşudur.</p>
+            <p>STREAM bir X MEDIA GROUP kuruluşudur.</p>
             <p>2023 Her Hakki saklidir</p>
           </div>
           <div>

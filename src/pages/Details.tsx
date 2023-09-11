@@ -3,9 +3,18 @@ import { useParams } from "react-router-dom";
 import { AiOutlineStar, AiOutlinePlus } from "react-icons/ai";
 import { BsCalendar2Date, BsFillPlayFill } from "react-icons/bs";
 
-const Details = () => {
-  const { movieId } = useParams();
-  const [movie, setMovie] = useState(null);
+interface Movie {
+  id: number;
+  title: string;
+  poster_path: string;
+  vote_average: number;
+  release_date: string;
+  overview: string;
+}
+
+const Details: React.FC = () => {
+  const { movieId } = useParams<{ movieId: string }>();
+  const [movie, setMovie] = useState<Movie | null>(null);
 
   useEffect(() => {
     fetch(

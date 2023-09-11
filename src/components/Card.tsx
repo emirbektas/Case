@@ -1,7 +1,16 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
-function Card({ movie }) {
+interface Movie {
+  id: number;
+  poster_path: string;
+  title: string;
+}
+
+interface CardProps {
+  movie: Movie;
+}
+
+function Card({ movie }: CardProps) {
   return (
     <Link to={`/details/${movie.id}`}>
       <div className="">

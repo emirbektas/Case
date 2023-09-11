@@ -2,12 +2,23 @@ import { useState, useEffect } from "react";
 import Card from "./Card";
 import { Link } from "react-router-dom";
 
-const Movies = () => {
-  const [movies, setMovies] = useState([]);
-  const [filteredMovies, setFilteredMovies] = useState([]);
-  const [selectedGenre, setSelectedGenre] = useState("");
+interface Movie {
+  id: number;
+  title: string;
+  genre_ids: number[];
+}
 
-  const genres = [
+const Movies: React.FC = () => {
+  const [movies, setMovies] = useState<Movie[]>([]);
+  const [filteredMovies, setFilteredMovies] = useState<Movie[]>([]);
+  const [selectedGenre, setSelectedGenre] = useState<string>("");
+
+  interface Genre {
+    value: string;
+    label: string;
+  }
+
+  const genres: Genre[] = [
     { value: "", label: "All" },
     { value: "28", label: "Action" },
     { value: "35", label: "Comedy" },
@@ -31,7 +42,7 @@ const Movies = () => {
       .catch((err) => console.log(err));
   };
 
-  const filterMoviesByGenre = (genreValue) => {
+  const filterMoviesByGenre = (genreValue: string) => {
     if (genreValue === "") {
       setFilteredMovies(movies);
     } else {

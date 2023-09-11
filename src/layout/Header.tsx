@@ -20,13 +20,17 @@ function Header() {
         </div>
 
         <button
+          id="dropdownDividerButton"
           data-dropdown-toggle="dropdownDivider"
           className="text-white font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
         >
           <SlMenu size="18" className="md:hidden" />
         </button>
 
-        <div className="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+        <div
+          id="dropdownDivider"
+          className="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+        >
           <ul
             className="py-2 text-sm text-gray-700 dark:text-gray-200"
             aria-labelledby="dropdownDividerButton"

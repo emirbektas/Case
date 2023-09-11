@@ -56,7 +56,7 @@ const Movies = () => {
               key={genre.value}
               value={genre.value}
               onMouseUp={() => filterMoviesByGenre(genre.value)}
-              className="category text-white bg-gray-800 rounded-xl px-6 mx-2 lg:px-8 xl:px-8 2xl:px-8 2xl:py-4"
+              className="focus:bg-purple-950 category text-white bg-gray-800 rounded-xl px-6 mx-2 lg:px-8 xl:px-8 2xl:px-8 2xl:py-4"
             >
               {genre.label}
             </button>

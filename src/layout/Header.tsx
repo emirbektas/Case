@@ -12,7 +12,7 @@ function Header() {
               <span className="my-auto ">STREAM</span>
             </li>
             <li className="hidden md:flex">
-              <button className="bg-purple-950 p-2 rounded-2xl text-sm text-white">
+              <button className="bg-purple-950 hover:opacity-80 p-2 rounded-2xl text-sm text-white">
                 Content
               </button>
             </li>
@@ -65,12 +65,12 @@ function Header() {
         <div className="hidden md:flex">
           <ul className="flex gap-4">
             <li>
-              <button className="bg-purple-950 p-2 rounded-2xl text-sm">
+              <button className="bg-purple-950 p-2 rounded-2xl text-sm hover:opacity-80 cursor-pointer">
                 Sign Up
               </button>
             </li>
             <li>
-              <button className="bg-purple-950 p-2 rounded-2xl text-sm">
+              <button className="bg-purple-950 p-2 rounded-2xl text-sm hover:opacity-80 cursor-pointer">
                 Log in
               </button>
             </li>

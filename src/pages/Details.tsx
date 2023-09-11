@@ -67,10 +67,10 @@ const Details: React.FC = () => {
               </p>
             </div>
             <div className="flex justify-center gap-4 mt-5">
-              <button className="cursor-pointer flex p-2 md:p-3 bg-yellow-300 rounded-3xl text-black text-sm">
+              <button className="cursor-pointer flex p-2 md:p-3 bg-yellow-300 hover:opacity-70 rounded-3xl text-black text-sm">
                 <BsFillPlayFill className="my-auto mr-1" /> WATCH TRAILER
               </button>
-              <button className="cursor-pointer flex p-2 md:p-3 bg-white rounded-3xl text-black text-sm">
+              <button className="cursor-pointer flex p-2 md:p-3 bg-white hover:opacity-70 rounded-3xl text-black text-sm">
                 <AiOutlinePlus className="my-auto mr-1" /> ADD LIST
               </button>
             </div>
